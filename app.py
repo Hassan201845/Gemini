@@ -1,6 +1,6 @@
-from google import genai
+from google import genai  
 
-# Initialize the GenAI client; importing genai client
+# Initialize the GenAI client; importing genai client.
 # gives a text response to a prompt
 client = genai.Client() # function inside google gemini; gets info from the gemini model
 
@@ -13,5 +13,6 @@ response = client.models.generate_content(
     
     
 )
+
 
 print(response.text)
